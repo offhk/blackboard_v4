@@ -52,10 +52,11 @@ sleepTime := 1000
 ; Gui Show coord ____________________________________________________________________________
 
 gui_xpos = 0
+; gui_xpos = 555
 ; gui_xpos = 1930
 
-gui_ypos = 0
-; gui_ypos = -1080
+; gui_ypos = 0
+gui_ypos = -1080
 ; gui_ypos = -1345
 
 ; ____________________________________________________________________________
@@ -728,19 +729,19 @@ loop, 14
 
    GuiControl, %guiId%:, %dataArray5%caller, %dataArray2% 
    GuiControl, %guiId%:, %dataArray5%jerseyNum, %dataArray1%
-   GuiControl, %guiId%:, %dataArray5%speedbox, %dataArray4%
+   GuiControl, %guiId%:, %dataArray5%speedbox, %dataArray3%
    
-         if (dataArray4 = "L1")
+         if (dataArray3 = "L1")
             {
             Gui, %guiId%:Font, s10 c00ff00
             GuiControl, %guiId%:Font, %dataArray5%speedbox
             }
-         else if (dataArray4 = "L2")
+         else if (dataArray3 = "L2")
             {
             Gui, %guiId%:Font, s10 c00ff00
             GuiControl, %guiId%:Font, %dataArray5%speedbox
             } 
-         else if (dataArray4 = "L3")
+         else if (dataArray3 = "L3")
             {
             Gui, %guiId%:Font, s10 c00ff00
             GuiControl, %guiId%:Font, %dataArray5%speedbox
@@ -750,47 +751,47 @@ loop, 14
             Gui, %guiId%:Font, s10 cffff00
             GuiControl, %guiId%:Font, %dataArray5%speedbox
             }   
-         else if (dataArray4 = "Slow")
+         else if (dataArray3 = "Slow")
             {
             Gui, %guiId%:Font, s10 cff0000
             GuiControl, %guiId%:Font, %dataArray5%speedbox
             }   
-         else if (dataArray4 = "Slow_1") 
+         else if (dataArray3 = "Slow_1") 
             {
             Gui, %guiId%:Font, s10 cff0000
             GuiControl, %guiId%:Font, %dataArray5%speedbox
             }   
-         else if (dataArray4 = "Slow_2") 
+         else if (dataArray3 = "Slow_2") 
             {
             Gui, %guiId%:Font, s10 cff0000
             GuiControl, %guiId%:Font, %dataArray5%speedbox
             }   
-         else if (dataArray4 = "Slow_3") 
+         else if (dataArray3 = "Slow_3") 
             {
             Gui, %guiId%:Font, s10 cff0000
             GuiControl, %guiId%:Font, %dataArray5%speedbox
             } 
-         else if (dataArray4 = "V_Slow") 
+         else if (dataArray3 = "V_Slow") 
             {
             Gui, %guiId%:Font, s10 cff0000
             GuiControl, %guiId%:Font, %dataArray5%speedbox
             } 
-         else if (dataArray4 = "New") 
+         else if (dataArray3 = "New") 
             {
             Gui, %guiId%:Font, s10 cffffff
             GuiControl, %guiId%:Font, %dataArray5%speedbox
             } 
-         else if (dataArray4 = "New_X") 
+         else if (dataArray3 = "New_X") 
             {
             Gui, %guiId%:Font, s10 cffffff
             GuiControl, %guiId%:Font, %dataArray5%speedbox
             } 
-         else if (dataArray4 = "New_1") 
+         else if (dataArray3 = "New_1") 
             {
             Gui, %guiId%:Font, s10 cffffff
             GuiControl, %guiId%:Font, %dataArray5%speedbox
             } 
-         else if (dataArray4 = "New_2") 
+         else if (dataArray3 = "New_2") 
             {
             Gui, %guiId%:Font, s10 cffffff
             GuiControl, %guiId%:Font, %dataArray5%speedbox
